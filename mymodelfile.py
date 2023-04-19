@@ -88,7 +88,7 @@ class MyModel:
         self.model.fit(train_x,train_y)
         cv = RepeatedKFold(n_splits=3, n_repeats=5, random_state=1)
         scores = cross_val_score(self.model, train_x, train_y, scoring='neg_mean_absolute_error', cv=cv, n_jobs=-1)
-        print('Mean MAE: %.3f (%.3f)' % (scores.mean(), scores.std()))
+        # print('Mean MAE: %.3f (%.3f)' % (scores.mean(), scores.std()))
         return self
 
     def predict(self, test_data):
