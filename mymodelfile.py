@@ -60,39 +60,79 @@ class MyModel:
                 new_data.append([2, innings2['BattingTeam'][0] if not innings2.empty else 'NA', innings1['BattingTeam']
                                 [0] if not innings1.empty else 'NA', all_batsmen2, all_bowlers2, innings2['total_run'].sum()])
                 
-                train=pd.DataFrame(new_data,columns=['innings', 'batting_team', 'bowling_team', 'batsmen','bowlers', 'runs'])
+        train = pd.DataFrame(new_data,columns=["innings","batting_team","bowling_team","batsmen","bowlers","runs"])
+                
+        #initialising all players to perform onehot encoding
+        # for player in players:
+        #     train[player[1][0]] = 0
 
+        # row_index = 0
 
-                #initialising all players to perform onehot encoding
-                # for player in players:
-                #     train[player[1][0]] = 0
+        #updating batsmen and bowlers of every innings
+        # for innings in train.iterrows():
+        #     batsmen = innings[1][3].split(", ")
+        #     bowlers = innings[1][4].split(", ")
+            
+        #     for batsman in batsmen:
+        #         train.loc[row_index,[batsman]] = 1
+            
+        #     row_index+=1
 
-                # row_index = 0
+        train = pd.get_dummies(train, columns = ['batting_team', 'bowling_team'])
+        train.drop(axis=1,columns=['batsmen','bowlers'], inplace=True)
+        train_x=train.drop(axis=1,columns=['runs']).to_numpy()
+        train_y=train['runs'].to_numpy()
 
-                #updating batsmen and bowlers of every innings
-                # for innings in train.iterrows():
-                #     batsmen = innings[1][3].split(", ")
-                #     bowlers = innings[1][4].split(", ")
-                    
-                #     for batsman in batsmen:
-                #         train.loc[row_index,[batsman]] = 1
-                    
-                #     row_index+=1
+        x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.2, random_state=42)
 
-                train = pd.get_dummies(train, columns = ['batting_team', 'bowling_team'])
-                train.drop(axis=1,columns=['batsmen','bowlers'], inplace=True)
-                train_x=train.drop(axis=1,columns=['runs']).to_numpy()
-                train_y=train['runs'].to_numpy()
-
-                x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.2, random_state=42)
-
-                # self.model.fit(train_x,train_y)
-                cv = RepeatedKFold(n_splits=2, n_repeats=5, random_state=1)
-                scores = cross_val_score(self.model, train_x, train_y, scoring='neg_mean_absolute_error', cv=cv, n_jobs=-1)
-                print('Mean MAE: %.3f (%.3f)' % (scores.mean(), scores.std()))
-                return self
+        self.model.fit(train_x,train_y)
+        cv = RepeatedKFold(n_splits=3, n_repeats=5, random_state=1)
+        scores = cross_val_score(self.model, train_x, train_y, scoring='neg_mean_absolute_error', cv=cv, n_jobs=-1)
+        print('Mean MAE: %.3f (%.3f)' % (scores.mean(), scores.std()))
+        return self
 
     def predict(self, test_data):
+        data = {'innings':[], 'batting_team_Chennai Super Kings':[],
+       'batting_team_Deccan Chargers':[], 'batting_team_Delhi Capitals':[],
+       'batting_team_Delhi Daredevils':[], 'batting_team_Gujarat Lions':[],
+       'batting_team_Gujarat Titans':[], 'batting_team_Kings XI Punjab':[],
+       'batting_team_Kochi Tuskers Kerala':[],
+       'batting_team_Kolkata Knight Riders':[],
+       'batting_team_Lucknow Super Giants':[], 'batting_team_Mumbai Indians':[],
+       'batting_team_Pune Warriors':[], 'batting_team_Punjab Kings':[],
+       'batting_team_Rajasthan Royals':[], 'batting_team_Rising Pune Supergiant':[],
+       'batting_team_Rising Pune Supergiants':[],
+       'batting_team_Royal Challengers Bangalore':[],
+       'batting_team_Sunrisers Hyderabad':[], 'bowling_team_Chennai Super Kings':[],
+       'bowling_team_Deccan Chargers':[], 'bowling_team_Delhi Capitals':[],
+       'bowling_team_Delhi Daredevils':[], 'bowling_team_Gujarat Lions':[],
+       'bowling_team_Gujarat Titans':[], 'bowling_team_Kings XI Punjab':[],
+       'bowling_team_Kochi Tuskers Kerala':[],
+       'bowling_team_Kolkata Knight Riders':[],
+       'bowling_team_Lucknow Super Giants':[], 'bowling_team_Mumbai Indians':[],
+       'bowling_team_NA':[], 'bowling_team_Pune Warriors':[],
+       'bowling_team_Punjab Kings':[], 'bowling_team_Rajasthan Royals':[],
+       'bowling_team_Rising Pune Supergiant':[],
+       'bowling_team_Rising Pune Supergiants':[],
+       'bowling_team_Royal Challengers Bangalore':[],
+       'bowling_team_Sunrisers Hyderabad':[]}
+        
+        tes_data = pd.DataFrame(data)
+        
         X_test = test_data
-        print(test_data)
-        return self.model.predict(X_test)
+
+        batting_team_1 = test_data["batting_team"][0]
+        batting_team_2 = test_data["batting_team"][1]
+        bowling_team_1 = test_data["bowling_team"][0]
+        bowling_team_2 = test_data["bowling_team"][1]
+
+        tes_data.loc[0] = [0 for i in range(38)]
+        tes_data.loc[len(tes_data.index)] = [1] +  [0 for i in range(37)]
+
+        tes_data.at[0, "batting_team_"+batting_team_1] = 1
+        tes_data.at[0, "bowling_team_"+bowling_team_1] = 1
+        tes_data.at[1, "batting_team_"+batting_team_2] = 1
+        tes_data.at[1, "bowling_team_"+bowling_team_2] = 1
+
+        # print(batting_team_1, bowling_team_1,batting_team_2, bowling_team_2)
+        return self.model.predict(tes_data)
