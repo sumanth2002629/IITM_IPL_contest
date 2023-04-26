@@ -21,6 +21,7 @@ class MyModel:
                 #    "R Ninan", "NJ Rimmington", "SB Styris", "ML Hayden", "CRD Fernando", "Anirudh Singh", "B Sumanth", "A Kumble", "WPUJC Vaas", "PD Collingwood", "AC Voges", "Pankaj Singh", "C Madan", "KP Appanna", "ST Jayasuriya", "AP Dole", "MF Maharoof", "AB Barath", "T Thushara", "RS Sodhi", "AA Bilakhia", "Jaskaran Singh", "K Goel", "KAJ Roach", "S Ladda", "DP Nannes", "JM Kemp", "DR Martyn", "RS Gavaskar", "SE Bond", "A Uniyal", "S Tyagi", "YA Abdulla", "Mohammad Ashraful", "SM Katich", "WA Mota", "RJ Quiney", "NK Patel", "T Henderson", "Yashpal Singh", "SS Shaikh", "Mashrafe Mortaza", "C Nanda", "Shoaib Ahmed", "AN Ghosh", "LA Carseldine", "MN van Wyk", "SM Harwood", "L Ronchi", "RR Raje", "W Jaffer", "D du Preez", "R Bishnoi", "TM Srivastava", "GR Napier", "FH Edwards", "SB Bangar", "A Flintoff", "T Kohli", "A Chopra", "Kamran Khan", "S Vidyut", "CK Kapugedera", "Kamran Akmal", "Sohail Tanvir", "Mohammad Asif", "VY Mahesh", "GD McGrath", "AS Yadav", "Shahid Afridi", "SP Fleming", "SM Pollock", "Salman Butt", "Umar Gul", "Misbah-ul-Haq", "LPC Silva", "M Ntini", "VS Yeligati", "Mohammad Hafeez", "DJ Thornely", "H Das", "DNT Zoysa", "J Arunkumar", "DT Patil", "Abdur Razzak", "Shoaib Malik", "Shoaib Akhtar", "PM Sarvesh Kumar", "DP Vijaykumar", "Younis Khan", "D Salunkhe", "T Taibu", "RR Sarwan", "VRV Singh", "U Kaul", "S Chanderpaul", "D Kalyankrishna", "MA Khote", "SB Joshi", "DS Lehmann", "AA Noffke", "R Sai Kishore", "M Pathirana", "PH Solanki", "DG Nalkande", "IC Porel", "AU Rashid", "S Sandeep Warrier", "Akash Singh", "KM Asif", "L Ngidi", "LI Meriwala", "Jalaj S Saxena", "Monu Kumar", "CJ Green", "K Khejroliya", "O Thomas", "JP Behrendorff", "SC Kuggeleijn", "S Midhun", "CJ Dala", "MJ Henry", "NB Singh", "SS Agarwal", "Tejas Baroka", "SM Boland", "JW Hastings", "GS Sandhu", "P Suyal", "K Santokie", "BW Hilfenhaus", "Anand Rajan", "MG Neser", "TP Sudhindra", "RW Price", "SS Mundhe", "P Prasanth", "AM Salvi", "AA Kazi", "MB Parmar", "C Ganapathy", "RA Shaikh", "SS Sarkar", "RR Bose", "B Geeves", "A Nel", "Gagandeep Singh", "P Amarnath", "Harry Brook", "Joe Root", "Cameron Green", "Sikandar Raza", "Litton Das", "Kusal Mendis", "Phil Salt", "Reece Topley", "Akeal Hosein", "Shubham Khajuria", "Rohan Kunnummal", "Chethan L.R.", "Shaik Rasheed", "Saurabh Kumar", "Vivrant Sharma", "Nishant Sindhu", "Sanvir Singh", "Samarth Vyas", "Dinesh Bana", "Abhimanyu Easwaran", "Sumit Kumar", "Upendra Singh Yadav", "Mukesh Kumar", "Lance Morris", "Yash Thakur", "Mujtaba Yousuf", "Chintal Gandhi", "Izharulhuq Naveed", "Himanshu Sharma", "Subhranshu Senapati", "Will Jacks", "Paul Stirling", "Dasun Shanaka", "Taskin Ahmed", "Blessing Muzarabani", "Johnson Charles", "Andre Fletcher", "Shai Hope", "Tom Latham", "Ben Mcdermott", "Lorcan Tucker", "Pukhraj Mann", "Akshat Raghuwanshi", "Himanshu Rana", "Shoun Roger", "Will Smeed", "Manoj Bhandage", "Gerald Coetzee", "Duan Jansen", "Evan Jones", "Abid Mushtaq", "Suryansh Shedge", "Akash Vashisht", "Donovan Ferreira", "Urvil Patel", "Kirant Shinde", "Vishnu Solanki", "Vidwath Kaverappa", "Rajan Kumar", "Ravi Kumar", "Arzan Nagwaswalla", "Akash Singh", "Paul Van Meekeren", "Vyshak Vijay Kumar", "S.Ajith Ram", "Satyajeet Bachhav", "Yuvraj Chudasama", "Peter Hatzoglou", "Karthik Meiyappan", "Suyash Sharma", "Shivam Sharma", "Reeza Hendricks", "Christiaan Jonker", "Brandon King", "Pathum Nissaanka", "Harry Tector", "Najibullah Zadran", "Qais Ahmad", "Charith Asalanka", "Michael Bracewell", "Jamie Overton", "Richard Gleeson", "Naveen Ul Haq", "Lahiru Kumara", "Joshua Little", "Dilshan Madushanka", "Luke Wood", "Priyansh Arya", "Matthew Breetzke", "Shivam Chauhan", "Rahul Gahlaut", "Sudip Gharami", "Amandeep Khare", "Bhanu Pania", "Ekant Sen", "Himanshu Bisht", "Mickil Jaiswal", "G.Aniketh Reddy", "Atit Sheth", "Tanay Thyagarajann", "Sumeet Verma", "Ajitesh Guruswamy", "Yash Kothari", "Suresh Kumar", "Kumar Kushagra", "Anmol Malhotra", "Robin Minz", "Agniv Pan", "Priyesh Patel", "Mitesh Patel", "Abishek Porel", "Nitish Kumar Reddy", "Bharat Sharma", "Vivek Singh", "Basit Bashir", "Nandre Burger", "Sakib Hussain", "Waseem Khanday", "Ravi Kiran Majeti", "Anuj Raj", "Avinash Singh", "Prince Yadav", "Mushtaq Beg", "Rocky Bhasker", "Sanjith Devaraj", "Raghav Goyal", "Allah Mohammad", "Lalit Mohan", "Bhuwan Rohilla", "Aman Sharma", "Manav Suthar", "Afif Hossain", "Sisanda Magala", "Craig Overton", "Dhananjaya Silva", "Dunith Wellalage", "Daryn Dupavillon", "David Payne", "Glenton Stuurman", "Anirudh Balachander", "Gourav Choudhary", "Saurav Chuahan", "Kumar Deobrat", "Chirag Gandhi", "Madhav Kaushik", "Priyank Panchal", "Ayush Pandey", "Rohan Patil", "Sanjay Ramaswamy", "Siddharth Yadav", "Rehan Ahmed", "Vaisakh Chandran", "Harsh Dubey", "Tanush Kotian", "Ninad Rathva", "B. Surya", "Jordan Thompson", "Shivank Vashisth", "Christopher Benjamin", "Connor Esterhuizen", "Mohd Arslan Khan", "Mamidi Krishna", "Fazil Makaya", "Kunal Rathore", "Ateev Saini", "Bipin Saurabh", "B.R. Sharath", "Yashovardhan Singh", "Lakshay Thareja", "Mohit Avasthi", "Ottneil Baartman", "Gurnoor Singh Brar", "Shahrukh Dar", "Thomas Helm", "Venkatesh Muralidhara", "Geet Puri", "E. Sanketh", "Ajay Sarkar", "Ashok Sharma", "Kanwar Singh", "Roston Chase", "Rahkeem Cornwall", "Karim Janat", "Keshav Maharaj", "Shivam Chaudhary", "Ashwin Das", "James Fuller", "Chirag Jani", "Akshay Karnewar", "Bhagmender Lather", "Lone Muzaffar", "Pulkit Narang", "Rohit Rayudu", "Sameer Rizvi", "Tunish Sawkar", "Sonu Yadav", "Auqib Dar", "Mukhtar Hussain", "Ashwani Kumar", "Hemant Kumar", "Nathan McAndrew", "Rajesh Mohanty", "Ravi Sharma", "Vikash Singh", "Ruben Trumpelmann", "Koushik Vasuki", "Vasu Vats", "Shubham Agrawal", "Anshul Kamboj", "Azim Kazi", "Dev Lakra", "Ajay Mandal", "Abdul P A", "Jitender Pal", "Ritwik Roy Chowdhury", "Shubham Singh", "Avneesh Sudha", "Asad Jamil Ahmed", "Aashish Bhatt", "McKenny Clarke", "Shubham Kapse", "Gourav Koul", "Raunak Kumar", "Trilok Nag", "Atal Bihari Rai", "Ramon Simmonds", "Rajeev Singh", "Mohd. Wasim", "Atharva Ankolekar", "Khizar Dafedar", "Naman Dhir", "Sahil Dhiwan", "Sampark Gupta", "Jordan Hermann", "Hayden Kerr", "Salman Khan", "Sairaj Patil", "Divyaansh Saxena", "Purnank Tyagi", "Deepraj Gaonkar", "Deepesh Nailwal", "Arjun Rapria", "Shashwat Rawat", "Sumit Ruikar", "Rajandeep Singh", "Anunay Singh", "Digvesh Singh", "Pranshu Vijayran", "Prerit Dutta", "Ramakrishna Ghosh", "Shubhang Hegde", "Shamshuzama Kazi", "Ayaz Khan", "Amit Pachhara", "Akul Pandove", "Mohit Rathee", "Garv Sangwan", "Shubham Sharma", "Nehal Wadhera", "Amit Yadav", "Amit Ali", "Rishabh Chauhan", "Matthew Forde", "Sammar Gajjar", "Rajneesh Gurbani", "Divyansh Joshi", "Dhruv Patel", "Jack Prestwidge", "Aditya Sarvate", "Mayank Dagar", "Sagar Solanki", "Prenelan Subrayen", "Bhagath Verma", "Rajvardhan Hangargekar", "Mayank Yadav", "Rahmanullah Gurbaz", "Kyle Mayers", "Yudhvir Singh", "Arjun Tendulkar", "Arshad Khan", "Shams Mulani", "Matthew Short", "Baltej Singh", "Atharva Taide", "Shivam Singh", "Dhruv Jurel"]
 
         data = training_data[0]
+        result = training_data[1]
 
         ids = data['ID'].unique()
 
@@ -31,6 +32,9 @@ class MyModel:
             match = match[match['overs'] < 6]
             innings1 = match[match['innings'] == 1].reset_index(drop=True)
             innings2 = match[match['innings'] == 2].reset_index(drop=True)
+
+            x = result[result['ID']==id]
+            city = x["City"].to_numpy()[0]
 
             if not innings1.empty:
                 batsmen1 = innings1['batter'].unique()
@@ -83,7 +87,7 @@ class MyModel:
         train_x=train.drop(axis=1,columns=['runs']).to_numpy()
         train_y=train['runs'].to_numpy()
 
-        x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.2, random_state=42)
+        # x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.2, random_state=42)
 
         self.model.fit(train_x,train_y)
         cv = RepeatedKFold(n_splits=3, n_repeats=5, random_state=1)
@@ -96,8 +100,7 @@ class MyModel:
        'batting_team_Deccan Chargers':[], 'batting_team_Delhi Capitals':[],
        'batting_team_Delhi Daredevils':[], 'batting_team_Gujarat Lions':[],
        'batting_team_Gujarat Titans':[], 'batting_team_Kings XI Punjab':[],
-       'batting_team_Kochi Tuskers Kerala':[],
-       'batting_team_Kolkata Knight Riders':[],
+       'batting_team_Kochi Tuskers Kerala':[], 'batting_team_Kolkata Knight Riders':[],
        'batting_team_Lucknow Super Giants':[], 'batting_team_Mumbai Indians':[],
        'batting_team_Pune Warriors':[], 'batting_team_Punjab Kings':[],
        'batting_team_Rajasthan Royals':[], 'batting_team_Rising Pune Supergiant':[],
@@ -134,5 +137,54 @@ class MyModel:
         tes_data.at[1, "batting_team_"+batting_team_2] = 1
         tes_data.at[1, "bowling_team_"+bowling_team_2] = 1
 
+        temp1 = 0
+        temp2 = 0
+
+        if(batting_team_1== "Chennai Super Kings"):
+            temp1 = 20
+        elif(batting_team_1=="Royal Challengers Bangalore"):
+            temp1 = 20
+        elif(batting_team_1=="Mumbai Indians"):
+            temp1 = 5
+        elif(batting_team_1=="Sunrisers Hyderabad"):
+            temp1 = 5
+        elif(batting_team_1=="Gujarat Titans"):
+            temp1 = 10
+        elif(batting_team_1=="Punjab Kings"):
+            temp1 = 10
+        elif(batting_team_1=="Delhi Capitals"):
+            temp1 = 10
+        elif(batting_team_1=="Lucknow Super Giants"):
+            temp1 = 5
+        elif(batting_team_1=="Kolkata Knight Riders"):
+            temp1 = 7
+        elif(batting_team_1=="Rajasthan Royals"):
+            temp1 = 20
+
+        if(batting_team_2== "Chennai Super Kings"):
+            temp2 = 20
+        elif(batting_team_2=="Royal Challengers Bangalore"):
+            temp2 = 20
+        elif(batting_team_2=="Mumbai Indians"):
+            temp2 = 5
+        elif(batting_team_2=="Sunrisers Hyderabad"):
+            temp2 = 5
+        elif(batting_team_2=="Gujarat Titans"):
+            temp2 = 10
+        elif(batting_team_2=="Punjab Kings"):
+            temp2 = 10
+        elif(batting_team_2=="Delhi Capitals"):
+            temp2 = 10
+        elif(batting_team_2=="Lucknow Super Giants"):
+            temp2 = 5
+        elif(batting_team_2=="Kolkata Knight Riders"):
+            temp2 = 7
+        elif(batting_team_2=="Rajasthan Royals"):
+            temp2 = 20
+
+
+        
+        
+
         # print(batting_team_1, bowling_team_1,batting_team_2, bowling_team_2)
-        return self.model.predict(tes_data)
+        return self.model.predict(tes_data) + np.array([temp1,temp2])
