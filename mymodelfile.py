@@ -145,19 +145,19 @@ class MyModel:
         elif(batting_team_1=="Royal Challengers Bangalore"):
             temp1 = 20
         elif(batting_team_1=="Mumbai Indians"):
-            temp1 = 5
+            temp1 = 10
         elif(batting_team_1=="Sunrisers Hyderabad"):
-            temp1 = 5
+            temp1 = 10
         elif(batting_team_1=="Gujarat Titans"):
-            temp1 = 10
+            temp1 = 15
         elif(batting_team_1=="Punjab Kings"):
-            temp1 = 10
+            temp1 = 20
         elif(batting_team_1=="Delhi Capitals"):
             temp1 = 10
         elif(batting_team_1=="Lucknow Super Giants"):
-            temp1 = 5
+            temp1 = 15
         elif(batting_team_1=="Kolkata Knight Riders"):
-            temp1 = 7
+            temp1 = 10
         elif(batting_team_1=="Rajasthan Royals"):
             temp1 = 20
 
@@ -166,19 +166,19 @@ class MyModel:
         elif(batting_team_2=="Royal Challengers Bangalore"):
             temp2 = 20
         elif(batting_team_2=="Mumbai Indians"):
-            temp2 = 5
+            temp2 = 10
         elif(batting_team_2=="Sunrisers Hyderabad"):
-            temp2 = 5
+            temp2 = 10
         elif(batting_team_2=="Gujarat Titans"):
-            temp2 = 10
+            temp2 = 15
         elif(batting_team_2=="Punjab Kings"):
-            temp2 = 10
+            temp2 = 20
         elif(batting_team_2=="Delhi Capitals"):
             temp2 = 10
         elif(batting_team_2=="Lucknow Super Giants"):
-            temp2 = 5
+            temp2 = 15
         elif(batting_team_2=="Kolkata Knight Riders"):
-            temp2 = 7
+            temp2 = 10
         elif(batting_team_2=="Rajasthan Royals"):
             temp2 = 20
 
